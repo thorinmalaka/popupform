@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Popup Form</title>\
+    <link rel="stylesheet" href="style.css">\
+</head>\
+<body>\
+    <!-- Popup Form HTML -->\
+    <div id="popupForm">\
+        <!-- Box 1: Heading -->\
+        <div class="popup-box">\
+            <h2>Lose <span>10 pounds</span> in <span>5 weeks</span>... for <span>FREE!</span></h2>\
+            <p>Fill in your contact information to receive your free eBook.</p>\
+        </div>\
+\
+        <!-- Box 2: Input Fields -->\
+        <div class="popup-box">\
+            <form action="https://formspree.io/f/meoqboqa" method="POST">\
+                <input type="text" name="name" placeholder="Your Name" required>\
+                <input type="email" name="email" placeholder="Your Email" required>\
+                <input type="tel" name="phone" placeholder="Your Phone Number (Optional)" \
+                       pattern="[0-9]\{3\}-[0-9]\{3\}-[0-9]\{4\}" \
+                       title="Phone number should match the format: 123-456-7890">\
+                <button type="submit">Submit</button>\
+            </form>\
+        </div>\
+\
+        <!-- Box 3: Close Button -->\
+        <div class="popup-box">\
+            <button class="close-btn" onclick="closePopup()">Close</button>\
+        </div>\
+    </div>\
+    <script src="script.js"></script>\
+</body>\
+</html>\
+}
