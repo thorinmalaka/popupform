@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Fitness Ebook - Popup Form</title>
+  <meta name="description" content="Sign up to receive a free ebook and learn how to lose 10 pounds in 5 weeks.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Free Fitness Ebook",
+    "description": "Landing page offering a free fitness ebook via popup form.",
+    "url": "https://www.example.com/"
+  }
+  </script>
+</head>
+<body>
+  <a href="blog/index.html">Visit our blog</a>
+  <!-- Popup Form HTML -->
+  <div id="popupForm">
+     <!-- Box 1: Heading -->
+     <div class="popup-box">
+        <h2>Lose <span>10 pounds</span> in <span>5 weeks</span>... for <span>FREE!</span></h2>
+        <p>Fill in your contact information to receive your free eBook.</p>
+     </div>
+
+     <!-- Box 2: Input Fields -->
+     <div class="popup-box">
+        <form action="https://formspree.io/f/meoqboqa" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number (Optional)"
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                   title="Phone number should match the format: 123-456-7890">
+            <button type="submit">Submit</button>
+        </form>
+     </div>
+
+     <!-- Box 3: Close Button -->
+     <div class="popup-box">
+        <button class="close-btn" onclick="closePopup()">Close</button>
+     </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
